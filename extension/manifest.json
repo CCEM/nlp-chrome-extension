@@ -18,8 +18,9 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://*.reddit.com/r/*"],
-      "js": ["jquery-3.2.1.min.js", "inject.js"]
+      "matches": [ "https://*.reddit.com/r/*" ],
+      "js": [ "jquery-3.2.1.min.js", "inject.js" ],
+      "css": [ "styles.css" ]
     }
   ],
   "web_accessible_resources": ["inject.js"]
