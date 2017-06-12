@@ -1,5 +1,5 @@
 (function() {
-  let $grabFromPage = $('div.commentarea div.md p')
+  let $grabFromPage = $('div.commentarea div.md')
   let textToEval = {};
   $grabFromPage.addClass(function(index){
     return 'reddex' + index;
