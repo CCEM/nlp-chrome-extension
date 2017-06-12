@@ -1,0 +1,26 @@
+{
+  "name": "Reddex",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Evaluate Reddit comments for tone and biases",
+  "homepage_url": "https://reddex.herokuapp.com",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Evaluate comments"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.reddit.com/r/*"],
+      "js": ["jquery-3.2.1.min.js", "inject.js"]
+    }
+  ],
+  "web_accessible_resources": ["inject.js"]
+}
