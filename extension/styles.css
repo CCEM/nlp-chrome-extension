@@ -1,0 +1,26 @@
+/*styles*/
+div.neg1 {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: rgba(255, 0, 0, 0.5) !important;
+}
+div.neg2 {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: rgba(255, 0, 0, 0.7) !important;
+}
+div.pos1 {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: rgba(0, 245, 33, 0.5) !important;
+}
+div.pos2 {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: rgba(0, 245, 33, 0.7) !important;
+}
+div.neu {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: rgba(0, 78, 245, 0.7) !important;
+}
