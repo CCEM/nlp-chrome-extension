@@ -25,7 +25,7 @@
     {
       "matches": [ "https://*.reddit.com/r/*/comments/*" ],
       "js": [ "jquery-3.2.1.min.js" ],
-      "css": [ "styles.css", "options.css" ]
+      "css": [ "styles.css" ]
     }
   ],
   "web_accessible_resources": ["inject.js"]
