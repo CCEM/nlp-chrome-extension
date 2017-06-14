@@ -1,23 +1,23 @@
 /*styles*/
 div.neg1 {
   border-style: solid !important;
-  border-width: 2px !important;
-  border-color: rgba(255, 0, 0, 0.5) !important;
+  border-width: 1.5px !important;
+  border-color: rgba(205, 0, 0, 0.5) !important;
 }
 div.neg2 {
   border-style: solid !important;
-  border-width: 2px !important;
-  border-color: rgba(255, 0, 0, 0.7) !important;
+  border-width: 3px !important;
+  border-color: rgba(255, 0, 44, 0.9) !important;
 }
 div.pos1 {
   border-style: solid !important;
-  border-width: 2px !important;
-  border-color: rgba(0, 245, 33, 0.5) !important;
+  border-width: 1.5px !important;
+  border-color: rgba(0, 255, 185, 0.5) !important;
 }
 div.pos2 {
   border-style: solid !important;
-  border-width: 2px !important;
-  border-color: rgba(0, 245, 33, 0.7) !important;
+  border-width: 3px !important;
+  border-color: rgba(0, 225, 22, .9) !important;
 }
 div.neu {
   border-style: solid !important;

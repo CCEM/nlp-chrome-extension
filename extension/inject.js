@@ -27,10 +27,16 @@
     console.log(response)
     for(key in response){
       $('.' + key).addClass(function(index){
-        if(response[key] <= -.3){
+        if(response[key] <= -.65){
+           return 'neg2'
+        }
+        else if(response[key] <= -.35){
            return 'neg1'
         }
-        else if(response[key] > 0.3){
+        else if(response[key] > 0.65){
+          return 'pos2'
+        }
+        else if(response[key] > 0.35){
           return 'pos1'
         }
         else{
