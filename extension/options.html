@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section.options div {
+                margin: 5px 0;
+            }   
+        </style>
+        <title>My Test Extension Options</title>
+    </head>
+    <body>
+        <section class="options">
+            Comment types to highlight:
+            <div>
+                <input type="checkbox" id="positive" name="positive" />
+                <label for="positive"><span></span>Positive</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="neutral" name="neutral" />
+                <label for="neutral"><span></span>Neutral</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="negative" name="negative" />
+                <label for="negative"><span></span>Negative</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="all" name="all" checked />
+                <label for="all"><span></span>All</label>
+            </div>
+            <div id="status"></div>
+            <button id="save">Save</button>
+        </section>
+
+    <script src="options.js"></script>
+    </body>
+</html>

@@ -10,18 +10,22 @@
     ],
     "persistent": false
   },
+  "options_ui":{
+    "page": "options.html",
+    "chrome_style": true
+  },
   "browser_action": {
     "default_title": "Evaluate comments"
-    // "default_popup": "popup.html"
   },
   "permissions": [
-      "https://www.reddit.com/r/*/comments/*"
+      "https://www.reddit.com/r/*/comments/*",
+      "storage"
   ],
   "content_scripts": [
     {
       "matches": [ "https://*.reddit.com/r/*/comments/*" ],
       "js": [ "jquery-3.2.1.min.js" ],
-      "css": [ "styles.css" ]
+      "css": [ "styles.css", "options.css" ]
     }
   ],
   "web_accessible_resources": ["inject.js"]
