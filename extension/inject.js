@@ -1,4 +1,12 @@
 (function() {
+  chrome.storage.sync.get({
+    showPositive: false,
+    showNeutral: false,
+    showNegative: false,
+    showAll: true
+  }, function(items) {
+    console.log(items.showPositive, items.showNeutral, items.showNegative, items.showAll);
+  });
   let $grabFromPage = $('div.commentarea div.md')
   let $url = window.location.pathname;
   let textToEval = {};
