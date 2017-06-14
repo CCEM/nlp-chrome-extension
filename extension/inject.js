@@ -32,13 +32,19 @@
     console.log(response)
     for(key in response){
       $('.' + key).addClass(function(index){
-        if((response[key] <= -.3) && (settings.showall === true || settings.negative === true)){
-           return 'neg1'
+        if((response[key] <= -0.65) && (settings.showall === true || settings.negative === true)){
+           return 'neg2'
         }
-        else if((response[key] > 0.3) && (settings.showall === true || settings.positive === true)){
+        else if((response[key] <= -0.35) && (settings.showall === true || settings.negative === true)) {
+          return 'neg1'
+        }
+        else if((response[key] > 0.65) && (settings.showall === true || settings.positive === true)) {
+          return 'pos2'
+        }
+        else if((response[key] > 0.35) && (settings.showall === true || settings.positive === true)){
           return 'pos1'
         }
-        else if((response[key] > -.3 && response[key] <= 0.3) && (settings.showall === true || settings.neutral === true)){
+        else if((response[key] > -0.35 && response[key] <= 0.35) && (settings.showall === true || settings.neutral === true)){
           return 'neu'
         }
       })
