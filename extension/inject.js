@@ -1,12 +1,17 @@
 (function() {
+  settings = {}
   chrome.storage.sync.get({
     showPositive: false,
     showNeutral: false,
     showNegative: false,
     showAll: true
   }, function(items) {
-    console.log(items.showPositive, items.showNeutral, items.showNegative, items.showAll);
+    settings.positive = items.showPositive;
+    settings.neutral = items.showNeutral;
+    settings.negative = items.showNegative;
+    settings.showall = items.showAll;
   });
+  console.log(settings)
   let $grabFromPage = $('div.commentarea div.md')
   let $url = window.location.pathname;
   let textToEval = {};
@@ -27,13 +32,13 @@
     console.log(response)
     for(key in response){
       $('.' + key).addClass(function(index){
-        if(response[key] <= -.3){
+        if((response[key] <= -.3) && (settings.showall === true || settings.negative === true)){
            return 'neg1'
         }
-        else if(response[key] > 0.3){
+        else if((response[key] > 0.3) && (settings.showall === true || settings.positive === true)){
           return 'pos1'
         }
-        else{
+        else if((response[key] > -.3 && response[key] <= 0.3) && (settings.showall === true || settings.neutral === true)){
           return 'neu'
         }
       })
