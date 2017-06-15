@@ -1,14 +1,9 @@
 # Reddex
 A Chrome extension for evaluating the tone of Reddit comments.
 
-This project identifies and evaluates reddit comments for tone (positivity, negativity, and objectivity). We do this in two parts: a Chrome browser extension and a web application. Our extension will allow the user the option of evaluating each comment when they visit a reddit comment thread by clicking on the extension icon. By right clicking on the icon the user can find a link back to our web application, where they can see further information about the history of the pages that have been evaluated. Behind the scenes, our extension was built in HTML, CSS and JavaScript which passes the information to a Python server and database that parses the page text and returns information on the language tone. We are using an NLTK library called Vader for these evaluations. Our web app was built using the Pyramid framework.
+This project identifies and evaluates reddit comments for tone (positivity, negativity, and objectivity). We do this in two parts: a Chrome browser extension and a web application. Our extension will allow the user the option of evaluating each comment when they visit a reddit comment thread by clicking on the extension icon. The tone is represented by highlighting the background color with red for negative comments, green for positive, and grey for neutral. Particularly positive comments are a deeper green while the particularly negative comments are more red. By right clicking on the icon the user can find a link back to our web application, where they can see further information about the history of the pages that have been evaluated. Behind the scenes, our extension was built in HTML, CSS and JavaScript which passes the information to a Python server and database that parses the page text and returns information on the language tone. We are using an NLTK library called Vader for these evaluations. Our web app was built using the Pyramid framework.
 
-![](http://imgur.com/BYsqRDA)
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
+![](http://i.imgur.com/BYsqRDA.png)
 
 ## Development setup
 
