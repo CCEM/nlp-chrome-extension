@@ -32,10 +32,10 @@ After cloning the repo:
 
 ## Meta
 
-W-Ely Paysinger – [https://github.com/W-Ely/github-link](https://github.com/W-Ely) – paysinger@gmail.com
-Morgan Nomura – [https://github.com/morganelle/github-link](https://github.com/morganelle) – morganelle@gmail.com
-Chris Hudson – [https://github.com/CaHudson94/github-link](https://github.com/CaHudson94) – c.ahudson84@gmail.com
-Carlos Cadena – [https://github.com/carloscadena/github-link](https://github.com/carloscadena) – cs.cadena@gmail.com
+- W-Ely Paysinger – [https://github.com/W-Ely/github-link](https://github.com/W-Ely) – paysinger@gmail.com
+- Morgan Nomura – [https://github.com/morganelle/github-link](https://github.com/morganelle) – morganelle@gmail.com
+- Chris Hudson – [https://github.com/CaHudson94/github-link](https://github.com/CaHudson94) – c.ahudson84@gmail.com
+- Carlos Cadena – [https://github.com/carloscadena/github-link](https://github.com/carloscadena) – cs.cadena@gmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
