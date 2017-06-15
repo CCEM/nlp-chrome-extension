@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "manifest_version": 2,
   "description": "Evaluate Reddit comments for tone and biases",
+  "icons": {
+    "128": "images/icon128.png"
+  },
   "homepage_url": "https://reddex.herokuapp.com",
   "background": {
     "scripts": [
@@ -15,7 +18,13 @@
     "chrome_style": true
   },
   "browser_action": {
-    "default_title": "Evaluate comments"
+    "default_title": "Evaluate comments",
+    "default_icon": {                    
+      "16": "images/icon16.png",
+      "24": "images/icon24.png",
+      "32": "images/icon32.png",
+      "128": "images/icon128.png"
+    }
   },
   "permissions": [
       "https://www.reddit.com/r/*/comments/*",
