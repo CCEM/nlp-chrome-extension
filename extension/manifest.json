@@ -1,6 +1,6 @@
 {
   "name": "Reddex",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Evaluate Reddit comments for tone and biases",
   "icons": {
