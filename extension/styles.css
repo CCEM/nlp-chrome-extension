@@ -1,0 +1,20 @@
+/*styles*/
+div.neg1 {
+  background-color: #ffeef0 !important;
+}
+
+div.neg2 {
+  background-color: #FFD5DA !important;
+}
+
+div.pos1 {
+  background-color: #e6ffed !important;
+}
+
+div.pos2 {
+  background-color: #BEFECC !important;
+}
+
+div.neu {
+  background-color: #F2F2F2 !important;
+}
