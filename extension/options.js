@@ -4,7 +4,6 @@ function save_options() {
   var neutral = document.getElementById('neutral').checked;
   var negative = document.getElementById('negative').checked;
   var all = document.getElementById('all').checked;
-  console.log(positive, neutral, negative, all);
   // var color = document.getElementById('color').value;
   // var likesColor = document.getElementById('like').checked;
   chrome.storage.sync.set({
