@@ -11,7 +11,6 @@
     settings.negative = items.showNegative;
     settings.showall = items.showAll;
   });
-  console.log(settings)
   let $grabFromPage = $('div.commentarea div.md')
   let $url = window.location.pathname;
   let textToEval = {};
@@ -22,14 +21,13 @@
     textToEval[$grabFromPage[index].className.split(' ')[1]] = $grabFromPage[index].innerText;
   });
   textToEval.url = $url.split('/')[2]
-  console.log(textToEval)
   $.ajax({
     url: 'https://reddex.herokuapp.com/inbound',
     method: 'POST',
     data: textToEval
   })
   .then(function(response){
-    console.log(response)
+    $grabFromPage.removeClass('neu neg1 neg2 pos1 pos2')
     for(key in response){
       $('.' + key).addClass(function(index){
         if((response[key] <= -0.65) && (settings.showall === true || settings.negative === true)){
